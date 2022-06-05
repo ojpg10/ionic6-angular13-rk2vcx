@@ -27,10 +27,13 @@ export class AppComponent {
       cube.rotation.y += 0.01;
       camera.position.z = camera.position.z + 0.02;
       renderer.render(scene, camera);
+       
+
     }
 
     // var scene = new THREE.Scene();
     console.log('HELLO');
+    this.status ="dddd"  ;
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
