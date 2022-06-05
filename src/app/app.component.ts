@@ -10,6 +10,13 @@ import * as THREE from 'three'; // we need @types/three for this to work (next t
 export class AppComponent {
   name = 'Ionic 6 Angular ' + VERSION.major;
   container: any; // any  = ugly
+  status="click para cambiar";
+  toggle = true;
+
+  enableDisableRule(job) {
+    this.toggle = !this.toggle;
+    this.status = this.toggle ? "Enable" : "Disable";
+  }
 
   stuff() {
     this.container = document.getElementById('canvas'); // should actually be done using ViewChild

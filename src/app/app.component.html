@@ -3,5 +3,14 @@
     <hello name="{{ name }}"></hello>
     <div id="canvas"></div>
     <ion-button (click)="stuff()">GREAT IONIC BUTTON</ion-button>
+
+    <button
+    (click)="enableDisableRule(1)"
+    [ngClass]="{'green' : toggle, 'red': !toggle}"
+  >
+    {{status}}
+  </button>
+
+
   </ion-content>
 </ion-app>
